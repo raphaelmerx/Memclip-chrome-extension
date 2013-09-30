@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Memclip for Google Chrome</title>
+		<style>
+			body {
+		      		max-width: 250px;
+        		}
+		</style>
+	</head>
+	<body>
+		<form method="post" action="http://memclip.via.ecp.fr/controleur/processing_clip.php" id="addEntry">
+			<p id='pseudoParagraphe'>
+				<input type='text' name='pseudo' id='pseudo' placeholder="Votre pseudo" maxlength="30" required/>
+			</p>
+			<p id='passwordParagraphe'>
+				<input type="password" name="password" id="password" placeholder="Password" maxlength="30" required/>
+			</p>
+			<p>
+			   <label for="url">URL</label>
+			   <input type="text" name="url" id="url" maxlength="30" required/>
+			</p>
+			<p>
+			   <label for="title">Titre</label>
+			   <input type="text" name="title" id="title" placeholder="Entrez ici le titre" maxlength="50"/>
+			</p>
+			<p>
+				<label for="description">Description</label>
+				<textarea name="description" id="description" placeholder="Entrez ici la description" maxlength='500'></textarea>
+			</p>
+			<input type="submit" id="send" value="Envoyer" /> <br />
+			<input type="button" id="cookieButton" value="Change user" /> <br />
+			<script type="text/javascript" src="popup.js"></script>
+		</form>
+	</body>
+</html>
+
